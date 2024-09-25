@@ -10,8 +10,8 @@ long double factorial(long double chislo){
 
 long double stepen(long double chislo,long int stepe)
 {
-	double result = 1;
-	int k = 0;
+	long double result = 1;
+	long int k = 0;
 	while (k < stepe)
 	{
 		result *= chislo;
@@ -20,14 +20,15 @@ long double stepen(long double chislo,long int stepe)
 	return result;
 }
 long double formula(long double chislo){
-    long double chisl=0,znam=0;
+    long double chisl=0,znam=0,result=1;
     for (int k=0;k<=10;k++){
         chisl+=stepen(chislo,2*k+1)/factorial(2*k+1);
     }
     for (int k=0;k<=10;k++){
         znam+=stepen(chislo,2*k)/factorial(2*k);
     }
-    return chisl/znam;
+    result=chisl/znam;
+    return result;
 }
 
 int main(){
