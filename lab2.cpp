@@ -8,13 +8,13 @@ long double factorial(long double chislo){
     return result;
 }
 
-double stepen(double base, int power)
+double stepen(double chislo, int stepe)
 {
 	double result = 1;
 	int k = 0;
-	while (k < power)
+	while (k < stepe)
 	{
-		result *= base;
+		result *= chislo;
 		k++;
 	}
 	return result;
