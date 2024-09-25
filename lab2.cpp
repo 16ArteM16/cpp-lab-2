@@ -8,7 +8,7 @@ long double factorial(long double chislo){
     return result;
 }
 
-double stepen(double chislo, int stepe)
+long double stepen(long double chislo,long int stepe)
 {
 	double result = 1;
 	int k = 0;
